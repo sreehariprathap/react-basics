@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Hero from "./Components/Hero"
+import Menu from "./Components/Menu"
+import NavBar from "./Components/NavBar"
+import UseReducer from "./Components/UseReducer"
+import UsersData from "./Components/UsersData"
+import UseStateForm from "./Components/UseStateForm"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar user="sreehari" brand="Cafe Dot" />
+      <Hero />
+      <Menu />
+      {/* <UseReducer /> */}
+      <UseStateForm />
+      <UsersData />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
